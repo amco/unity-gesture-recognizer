@@ -1,18 +1,22 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using GestureRecognizer;
 using NUnit.Framework;
 using UnityEngine;
-using UnityEngine.TestTools;
 
 namespace Tests.Plugin.Unit
 {
-    public class GestureReconizer_Tests : Test
+    public class GestureReconizer_Tests
     {
+        #region FIELDS
+
         const string SquareName = "Square";
         const string LineName = "Line";
         const string ArrowName = "Arrow";
         private GesturesDataset gestureDataset;
+
+        #endregion
+
+        #region PROPERTIES
 
         private Vector3[] SingleStrokeSquare
         {
@@ -65,6 +69,10 @@ namespace Tests.Plugin.Unit
             }
         }
 
+        #endregion
+
+        #region TESTS
+
         [SetUp]
         public void Setup()
         {
@@ -72,9 +80,9 @@ namespace Tests.Plugin.Unit
         }
 
         [TearDown]
-        protected override void Reset()
+        private void Reset()
         {
-            DestroyObject(gestureDataset);
+            Object.Destroy(gestureDataset);
         }
 
         [Test]
@@ -277,6 +285,10 @@ namespace Tests.Plugin.Unit
             Assert.That(gestureDataset.Recognize(scaledArrow) == ArrowName);
         }
 
+        #endregion
+
+        #region BEHAVIORS
+
         private bool IsListEquals(List<Vector3[]> firstList, List<Vector3[]> secondList)
         {
             if (firstList.Count != secondList.Count)
@@ -319,5 +331,7 @@ namespace Tests.Plugin.Unit
             }
             return sourceCopy;
         }
+
+        #endregion
     }
 }
