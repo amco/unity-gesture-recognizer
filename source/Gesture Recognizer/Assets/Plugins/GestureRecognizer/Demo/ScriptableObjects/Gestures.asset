@@ -1,0 +1,1595 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f2470fd9e304d64ca01df1a03385965, type: 3}
+  m_Name: Gestures
+  m_EditorClassIdentifier: 
+  gestures:
+  - name: A
+    points:
+    - X: -1.3020833
+      Y: -1.9335936
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.3020833
+      Y: -1.7903646
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.2499999
+      Y: -1.5820311
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.1979167
+      Y: -1.3606771
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.1197917
+      Y: -1.0091146
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.0286459
+      Y: -0.6575522
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.9505208
+      Y: -0.30598965
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.7942709
+      Y: 0.3580731
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.7421875
+      Y: 0.51432306
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.62499994
+      Y: 0.9179687
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.54687494
+      Y: 1.1914061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4817708
+      Y: 1.4257811
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4166667
+      Y: 1.6471356
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.3385417
+      Y: 1.8684893
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.26041666
+      Y: 2.0247393
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.20833334
+      Y: 2.1940105
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.14322916
+      Y: 2.3372393
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.065104164
+      Y: 2.5065105
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.013020834
+      Y: 2.6497393
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.1171875
+      Y: 2.4153643
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.18229166
+      Y: 2.233073
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.26041666
+      Y: 2.0117185
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.3385417
+      Y: 1.7122393
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.4296875
+      Y: 1.4127606
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.5598959
+      Y: 0.9179687
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.62499994
+      Y: 0.6054687
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.703125
+      Y: 0.33203122
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.78125
+      Y: 0.09765624
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8723959
+      Y: -0.12369782
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.9114583
+      Y: -0.25390622
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.9635416
+      Y: -0.3580728
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.0026041
+      Y: -0.48828122
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.0416666
+      Y: -0.59244776
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.0807292
+      Y: -0.74869776
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1067708
+      Y: -0.94401026
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1328124
+      Y: -1.0742186
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1588542
+      Y: -1.1914061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1848958
+      Y: -1.3216146
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.2239583
+      Y: -1.4388021
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.2499999
+      Y: -1.5950521
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.2630208
+      Y: -1.7382811
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.2760417
+      Y: -1.8554686
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8203125
+      Y: 0.12369811
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: -0.7161459
+      Y: 0.1627606
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: -0.46875
+      Y: 0.22786438
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: -0.3385417
+      Y: 0.25390622
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: -0.1953125
+      Y: 0.26692688
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0
+      Y: 0.30598938
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.10416667
+      Y: 0.3190106
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.22135416
+      Y: 0.34505188
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.3515625
+      Y: 0.34505188
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.4817708
+      Y: 0.3580731
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.5989584
+      Y: 0.37109372
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.703125
+      Y: 0.3971356
+      StrokeID: 1
+      intX: 0
+      intY: 0
+  - name: B
+    points:
+    - X: -0.8333334
+      Y: -1.8684896
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8333334
+      Y: -1.7382811
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8333334
+      Y: -1.5169271
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.859375
+      Y: -1.2825521
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8854166
+      Y: -0.9570312
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.9114583
+      Y: -0.63151026
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.9765625
+      Y: -0.30598965
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.0156249
+      Y: 0.006510615
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.0807292
+      Y: 0.2799481
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.1197917
+      Y: 0.5664062
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.1848958
+      Y: 0.9179687
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.2109374
+      Y: 1.0742186
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.2369792
+      Y: 1.2174481
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.2630208
+      Y: 1.3476561
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.2630208
+      Y: 1.4518231
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.2890625
+      Y: 1.5690106
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.3151042
+      Y: 1.6992186
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.328125
+      Y: 1.8424481
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.3411458
+      Y: 1.9596355
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.3411458
+      Y: 2.0898435
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.3411458
+      Y: 2.1940105
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.3411458
+      Y: 2.2981768
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.2760417
+      Y: 2.441406
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.1718749
+      Y: 2.519531
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.9765625
+      Y: 2.6106768
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.7942709
+      Y: 2.6367185
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.58593744
+      Y: 2.6497393
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.3515625
+      Y: 2.6497393
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.065104164
+      Y: 2.6497393
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.22135416
+      Y: 2.6106768
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.4817708
+      Y: 2.5325518
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8723959
+      Y: 2.4283855
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.0156249
+      Y: 2.3502605
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1067708
+      Y: 2.285156
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1848958
+      Y: 2.1419268
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.2109374
+      Y: 2.0377605
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.2239583
+      Y: 1.8164061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1588542
+      Y: 1.6471356
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1067708
+      Y: 1.5299481
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.0026041
+      Y: 1.4127606
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.9114583
+      Y: 1.3216143
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8072916
+      Y: 1.2304686
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.5598959
+      Y: 1.061198
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.31249997
+      Y: 0.90494806
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.15624999
+      Y: 0.82682306
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.039062496
+      Y: 0.7617187
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.09114583
+      Y: 0.70963556
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.27343747
+      Y: 0.6575518
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.46875
+      Y: 0.6054687
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6119791
+      Y: 0.5794269
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.7942709
+      Y: 0.5403644
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.9375
+      Y: 0.51432306
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.7552084
+      Y: 0.5403644
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6510416
+      Y: 0.5403644
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.2994792
+      Y: 0.5403644
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.052083336
+      Y: 0.5403644
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.18229166
+      Y: 0.51432306
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.4427083
+      Y: 0.46223935
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.7161459
+      Y: 0.41015622
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.0026041
+      Y: 0.3190106
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.3020833
+      Y: 0.25390622
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.5234375
+      Y: 0.17578124
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.6536458
+      Y: 0.11067688
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.796875
+      Y: 0.006510615
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.8489583
+      Y: -0.12369782
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.875
+      Y: -0.25390622
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.9010416
+      Y: -0.3971353
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.9140625
+      Y: -0.55338526
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.9140625
+      Y: -0.6966147
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.875
+      Y: -0.9570312
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.8229166
+      Y: -1.0742186
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.7447917
+      Y: -1.1914061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.6666667
+      Y: -1.3216146
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.5885417
+      Y: -1.4127603
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.4973958
+      Y: -1.4908853
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.4192708
+      Y: -1.5559896
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.3020833
+      Y: -1.6471351
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1848958
+      Y: -1.6992186
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.0026041
+      Y: -1.7643226
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8463541
+      Y: -1.8164061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.7161459
+      Y: -1.8424476
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.5989584
+      Y: -1.8424476
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.4817708
+      Y: -1.8424476
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.2994792
+      Y: -1.8424476
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.1953125
+      Y: -1.8424476
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.013020834
+      Y: -1.8424476
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.14322916
+      Y: -1.8294271
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.31249997
+      Y: -1.8164061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4427083
+      Y: -1.8164061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.5729166
+      Y: -1.8033851
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6770834
+      Y: -1.8033851
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.78125
+      Y: -1.8033851
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.9244791
+      Y: -1.8033851
+      StrokeID: 0
+      intX: 0
+      intY: 0
+  - name: C
+    points:
+    - X: 0.9244791
+      Y: 1.8815106
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.9375
+      Y: 1.9856768
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8463541
+      Y: 2.1679685
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.7552084
+      Y: 2.2721355
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.6640625
+      Y: 2.3502605
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.5338541
+      Y: 2.4283855
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.390625
+      Y: 2.4544268
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.16927084
+      Y: 2.4544268
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.039062496
+      Y: 2.4153643
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.20833334
+      Y: 2.363281
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4036458
+      Y: 2.311198
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.5989584
+      Y: 2.2591143
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.7421875
+      Y: 2.1809893
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8854166
+      Y: 2.1028643
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.9895833
+      Y: 2.0377605
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.0807292
+      Y: 1.9596355
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.1458333
+      Y: 1.8684893
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.2239583
+      Y: 1.7382811
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.3151042
+      Y: 1.6080731
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.4322917
+      Y: 1.3736981
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.5625
+      Y: 1.0742186
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.6276042
+      Y: 0.9179687
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.6666667
+      Y: 0.7617187
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.6927083
+      Y: 0.6184894
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.71875
+      Y: 0.4752606
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.71875
+      Y: 0.34505188
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.71875
+      Y: 0.18880188
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.71875
+      Y: -0.03255218
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.71875
+      Y: -0.17578124
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.6666667
+      Y: -0.34505215
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.6015625
+      Y: -0.5013021
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.5234375
+      Y: -0.6575522
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.4322917
+      Y: -0.78776026
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.3671875
+      Y: -0.9179687
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.2890625
+      Y: -1.0221353
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.1718749
+      Y: -1.1653646
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.1067708
+      Y: -1.2434896
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -1.0156249
+      Y: -1.3216146
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8333334
+      Y: -1.4388021
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6770834
+      Y: -1.5039061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.5598959
+      Y: -1.5429686
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4427083
+      Y: -1.5690101
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.27343747
+      Y: -1.5950521
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.16927084
+      Y: -1.5950521
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.013020834
+      Y: -1.5950521
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.15624999
+      Y: -1.5690101
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.3255208
+      Y: -1.5039061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.45572916
+      Y: -1.4518228
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.5598959
+      Y: -1.3997396
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.6380209
+      Y: -1.3346353
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.7161459
+      Y: -1.2565103
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.78125
+      Y: -1.1783853
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.859375
+      Y: -1.0481771
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8984375
+      Y: -0.94401026
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8984375
+      Y: -0.8398437
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8984375
+      Y: -0.7356772
+      StrokeID: 0
+      intX: 0
+      intY: 0
+  - name: D
+    points:
+    - X: -0.4817708
+      Y: -1.6731771
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4817708
+      Y: -1.5169271
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4817708
+      Y: -1.3085936
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.45572916
+      Y: -0.9179687
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4427083
+      Y: -0.55338526
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4427083
+      Y: -0.37109372
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4427083
+      Y: 0.03255188
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4427083
+      Y: 0.37109372
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.50781244
+      Y: 0.9700518
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.5729166
+      Y: 1.2825518
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6119791
+      Y: 1.5950518
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6380209
+      Y: 1.8945311
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6640625
+      Y: 2.0898435
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6770834
+      Y: 2.2591143
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6901041
+      Y: 2.363281
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.703125
+      Y: 2.4804685
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.703125
+      Y: 2.5846355
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.3645833
+      Y: 2.597656
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.234375
+      Y: 2.5716143
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.1953125
+      Y: 2.4804685
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.49479166
+      Y: 2.4023435
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.7161459
+      Y: 2.3502605
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8854166
+      Y: 2.2721355
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.0677083
+      Y: 2.1809893
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.2890625
+      Y: 2.050781
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.4973958
+      Y: 1.9205731
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.6666667
+      Y: 1.7903643
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.875
+      Y: 1.5950518
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.9921875
+      Y: 1.4908856
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.0833333
+      Y: 1.3606768
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.1354165
+      Y: 1.2434893
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.174479
+      Y: 1.1263018
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.2135415
+      Y: 0.9960937
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.2265623
+      Y: 0.82682306
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.2265623
+      Y: 0.6966143
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.2265623
+      Y: 0.5013019
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.2135415
+      Y: 0.34505188
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.1874998
+      Y: 0.21484374
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.1614585
+      Y: 0.058593746
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.1093748
+      Y: -0.08463532
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 2.0182292
+      Y: -0.30598965
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.9661458
+      Y: -0.41015622
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.8880208
+      Y: -0.5143228
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.7708333
+      Y: -0.6445312
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.640625
+      Y: -0.74869776
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.5625
+      Y: -0.8138022
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.4322917
+      Y: -0.8919272
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.3020833
+      Y: -0.9570312
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.1979167
+      Y: -1.0091146
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 1.0156249
+      Y: -1.0872396
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8984375
+      Y: -1.1393228
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.7682291
+      Y: -1.1914061
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.6510416
+      Y: -1.2304686
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.5338541
+      Y: -1.2565103
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.4036458
+      Y: -1.3085936
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.22135416
+      Y: -1.3606771
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.1171875
+      Y: -1.3997396
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.065104164
+      Y: -1.4388021
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.22135416
+      Y: -1.4648436
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.4036458
+      Y: -1.4908853
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.50781244
+      Y: -1.4908853
+      StrokeID: 0
+      intX: 0
+      intY: 0
+  - name: E
+    points:
+    - X: 1.0580914
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.9336098
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.7053939
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.4356845
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.22821584
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.020746391
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.1452283
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.41493773
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6224068
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.7468879
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.85062265
+      Y: 1.9709544
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8921162
+      Y: 1.5975105
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8921162
+      Y: 1.4730291
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8921162
+      Y: 1.1825727
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.912863
+      Y: 0.85062265
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.912863
+      Y: 0.62240654
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.912863
+      Y: 0.45643148
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.912863
+      Y: 0.26970923
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.912863
+      Y: 0.10373413
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.912863
+      Y: -0.062240656
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.9336102
+      Y: -0.20746855
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.95435697
+      Y: -0.35269707
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.97510374
+      Y: -0.60165966
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.97510374
+      Y: -0.74688786
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.99585056
+      Y: -0.8713689
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.99585056
+      Y: -1.0165974
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.99585056
+      Y: -1.26556
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.99585056
+      Y: -1.3900412
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.85062265
+      Y: -1.3900412
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.7468879
+      Y: -1.3900412
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.6431536
+      Y: -1.3692948
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.5186724
+      Y: -1.3485477
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.39419097
+      Y: -1.3278006
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.26970983
+      Y: -1.3278006
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.124481514
+      Y: -1.3070537
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.124481514
+      Y: -1.3070537
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.2697094
+      Y: -1.3070537
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.4356845
+      Y: -1.3070537
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.7053939
+      Y: -1.3485477
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: 0.8091283
+      Y: -1.3485477
+      StrokeID: 0
+      intX: 0
+      intY: 0
+    - X: -0.8713694
+      Y: 0.33195016
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: -0.6224068
+      Y: 0.33195016
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: -0.47717848
+      Y: 0.33195016
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: -0.35269737
+      Y: 0.33195016
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: -0.18672228
+      Y: 0.3112036
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: -0.041493975
+      Y: 0.2904564
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.082987145
+      Y: 0.26970923
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.20746866
+      Y: 0.26970923
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.31120297
+      Y: 0.24896263
+      StrokeID: 1
+      intX: 0
+      intY: 0
+    - X: 0.41493732
+      Y: 0.24896263
+      StrokeID: 1
+      intX: 0
+      intY: 0
