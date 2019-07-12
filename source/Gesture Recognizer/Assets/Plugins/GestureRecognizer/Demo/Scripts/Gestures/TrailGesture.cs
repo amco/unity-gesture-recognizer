@@ -53,6 +53,11 @@ namespace GestureRecognizer.Demo
             trailRenderers[trailRenderers.Count - 1].transform.position = newPos;
         }
 
+        protected void LogMessage(string errorMessage)
+        {
+            logText.text = errorMessage;
+        }
+
         #endregion
     }
 }

@@ -33,7 +33,7 @@ namespace GestureRecognizer.Demo
 
         private void AddGesture()
         {
-            if (ShowErrorMessage())
+            if (!IsReadyToRecord())
                 return;
 
             List<Vector3[]> strokes = new List<Vector3[]>();
@@ -44,24 +44,23 @@ namespace GestureRecognizer.Demo
                 strokes.Add(pointsToDetect);
             }
             gestureDataset.AddGesture(strokes, gestureNameField.text);
-            logText.text = string.Format(GestureSavedMessage, gestureNameField.text);
+            LogMessage(string.Format(GestureSavedMessage, gestureNameField.text));
             gestureNameField.text = string.Empty;
         }
 
-        private bool ShowErrorMessage()
+        private bool IsReadyToRecord()
         {
             if (gestureDataset == null)
             {
-                logText.text = NoDatasetFoundMessage;
-                return true;
+                LogMessage(NoDatasetFoundMessage);
+                return false;
             }
-
             if (gestureNameField.text == string.Empty)
             {
-                logText.text = NoNameMessage;
-                return true;
+                LogMessage(NoNameMessage);
+                return false;
             }
-            return false;
+            return true;
         }
 
         #endregion

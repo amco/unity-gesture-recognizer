@@ -43,23 +43,25 @@ namespace GestureRecognizer.Demo
 
         private void NextGesture()
         {
-            if (ShowErrorMessage())
+            if (!IsReadyToView())
                 return;
+
             index = (index < Gestures.Count - 1) ? index + 1 : 0;
             ShowCurrentGesture();
         }
 
         private void PreviousGesture()
         {
-            if (ShowErrorMessage())
+            if (!IsReadyToView())
                 return;
+
             index = (index > 0) ? index - 1 : index = Gestures.Count - 1;
             ShowCurrentGesture();
         }
 
         private void DeleteGesture()
         {
-            if (ShowErrorMessage())
+            if (!IsReadyToView())
                 return;
 
             gestureDataset.DeleteGesture(CurrentGesture.name);
@@ -72,7 +74,7 @@ namespace GestureRecognizer.Demo
         {
             DeleteTrailRenderers();
 
-            if (ShowErrorMessage())
+            if (!IsReadyToView())
                 return;
 
             List<Vector3[]> listOfPoints = CurrentGesture.GetPointsVector3Lists();
@@ -83,23 +85,22 @@ namespace GestureRecognizer.Demo
                 trailRenderer.AddPositions(points);
                 trailRenderer.transform.position = points[points.Length - 1];
             }
-            logText.text = string.Format(GestureShownMessage, CurrentGesture.name);
+            LogMessage(string.Format(GestureShownMessage, CurrentGesture.name));
         }
 
-        private bool ShowErrorMessage()
+        private bool IsReadyToView()
         {
             if (gestureDataset == null)
             {
-                logText.text = NoDatasetFoundMessage;
-                return true;
+                LogMessage(NoDatasetFoundMessage);
+                return false;
             }
-
             if (gestureDataset.IsEmpty)
             {
-                logText.text = NoGesturesFoundMessage;
-                return true;
+                LogMessage(NoGesturesFoundMessage);
+                return false;
             }
-            return false;
+            return true;
         }
 
         #endregion

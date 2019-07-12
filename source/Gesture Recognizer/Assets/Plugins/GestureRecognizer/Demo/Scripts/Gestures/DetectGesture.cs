@@ -44,7 +44,7 @@ namespace GestureRecognizer.Demo
 
         private void DetectPattern()
         {
-            if (ShowErrorMessage())
+            if (!IsReadyToDetect())
                 return;
 
             List<Vector3[]> strokes = new List<Vector3[]>();
@@ -54,23 +54,22 @@ namespace GestureRecognizer.Demo
                 trailRenderer.GetPositions(pointsToDetect);
                 strokes.Add(pointsToDetect);
             }
-            logText.text = string.Format(GestureDetectedMessage, gestureDataset.Recognize(strokes));
+            LogMessage(string.Format(GestureDetectedMessage, gestureDataset.Recognize(strokes)));
         }
 
-        private bool ShowErrorMessage()
+        private bool IsReadyToDetect()
         {
             if (gestureDataset == null)
             {
-                logText.text = NoDatasetFoundMessage;
-                return true;
+                LogMessage(NoDatasetFoundMessage);
+                return false;
             }
-
             if (gestureDataset.IsEmpty)
             {
-                logText.text = NoGesturesFoundMessage;
-                return true;
+                LogMessage(NoGesturesFoundMessage);
+                return false;
             }
-            return false;
+            return true;
         }
 
         #endregion
