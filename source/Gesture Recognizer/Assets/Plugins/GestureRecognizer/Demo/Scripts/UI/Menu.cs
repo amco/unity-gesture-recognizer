@@ -34,18 +34,14 @@ namespace GestureRecognizer.Demo
         private void NextSection()
         {
             HideCurrentSection();
-            index++;
-            if (index >= sections.Length)
-                index = 0;
+            index = (index < sections.Length - 1) ? index + 1 : 0;
             ShowCurrentSection();
         }
 
         private void PreviousSection()
         {
             HideCurrentSection();
-            index--;
-            if (index < 0)
-                index = sections.Length - 1;
+            index = (index > 0) ? index - 1 : index = sections.Length - 1;
             ShowCurrentSection();
         }
 

@@ -9,7 +9,8 @@ namespace GestureRecognizer
     {
         #region CONSTRUCTORS
 
-        public SerializablePoint(float x, float y, int strokeId) : base(x, y, strokeId) { }
+        public SerializablePoint(float x, float y, int strokeId) : base(x, y, strokeId)
+        { }
 
         #endregion
     }

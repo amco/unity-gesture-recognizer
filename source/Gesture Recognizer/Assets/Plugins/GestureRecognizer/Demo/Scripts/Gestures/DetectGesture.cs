@@ -4,63 +4,42 @@ using UnityEngine.UI;
 
 namespace GestureRecognizer.Demo
 {
-    public class DetectGesture : MonoBehaviour
+    public class DetectGesture : TrailGesture
     {
         #region FIELDS
 
-        private const string NoDatasetFoundMessage = "No gesture dataset";
-        private const string NoGesturesFoundMessage = "No gestures found";
-        private const string GestureDetectedMessage = "{0}  recognized!";
+        protected const string GestureDetectedMessage = "{0}  recognized!";
 
-        [SerializeField] private GesturesDataset gestureDataset = null;
-        [SerializeField] private TrailRenderer trailRendererPrefab = null;
-        [SerializeField] private Text logText = null;
-        [SerializeField] private Button submitButton = null;
-        [SerializeField] private Button clearButton = null;
+        [SerializeField] protected Button submitButton = null;
+        [SerializeField] protected Button clearButton = null;
 
-        private List<TrailRenderer> trailRenderers = null;
-        private bool clearOnNextDraw = false;
+        protected bool clearOnNextDraw = false;
 
         #endregion
 
         #region BEHAVIORS
 
-        private void Awake()
+        protected override void Awake()
         {
-            trailRenderers = new List<TrailRenderer>();
+            base.Awake();
             submitButton.onClick.AddListener(Submit);
             clearButton.onClick.AddListener(DeleteTrailRenderers);
         }
 
-        public void OnDragStart()
+        public override void OnDragStart()
         {
             if (clearOnNextDraw)
             {
                 DeleteTrailRenderers();
                 clearOnNextDraw = false;
             }
-            trailRenderers.Add(Instantiate<TrailRenderer>(trailRendererPrefab, Vector3.zero, Quaternion.identity, transform));
-            MoveToCursor();
-        }
-
-        public void OnDrag()
-        {
-            MoveToCursor();
+            base.OnDragStart();
         }
 
         private void Submit()
         {
             DetectPattern();
             clearOnNextDraw = true;
-        }
-
-        private void DeleteTrailRenderers()
-        {
-            foreach (TrailRenderer trailRenderer in trailRenderers)
-            {
-                Destroy(trailRenderer.gameObject);
-            }
-            trailRenderers.Clear();
         }
 
         private void DetectPattern()
@@ -76,13 +55,6 @@ namespace GestureRecognizer.Demo
                 strokes.Add(pointsToDetect);
             }
             logText.text = string.Format(GestureDetectedMessage, gestureDataset.Recognize(strokes));
-        }
-
-        private void MoveToCursor()
-        {
-            Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            newPos.z = 0;
-            trailRenderers[trailRenderers.Count - 1].transform.position = newPos;
         }
 
         private bool ShowErrorMessage()

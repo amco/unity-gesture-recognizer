@@ -6,12 +6,15 @@ using QDollar = QDollarGestureRecognizer;
 
 namespace GestureRecognizer
 {
-    [CreateAssetMenu(fileName = "GestureDataSet", menuName = "Gesture Recognizer/New Gesture Dataset", order = 1)]
+    [CreateAssetMenu(menuName = MenuName)]
     public class GesturesDataset : ScriptableObject
     {
         #region FIELDS
 
+        private const string MenuName = "Gesture Recognizer/Gesture Dataset";
+
         [SerializeField] private List<SerializableGesture> gestures;
+
         private PDollar.Gesture[] pDollarGestures;
         private bool shouldRecalculate = true;
 

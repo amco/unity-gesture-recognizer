@@ -4,23 +4,17 @@ using UnityEngine.UI;
 
 namespace GestureRecognizer.Demo
 {
-    public class ViewGesture : MonoBehaviour
+    public class ViewGesture : TrailGesture
     {
         #region FIELDS
 
-        private const string NoDatasetFoundMessage = "No gesture dataset";
-        private const string GestureShownMessage = "{0} shown!";
-        private const string NoGesturesFoundMessage = "No gestures found";
+        protected const string GestureShownMessage = "{0} shown!";
 
-        [SerializeField] GesturesDataset gestureDataset = null;
-        [SerializeField] TrailRenderer trailRendererPrefab = null;
-        [SerializeField] Text logText = null;
-        [SerializeField] private Button nextButton = null;
-        [SerializeField] private Button previousButton = null;
-        [SerializeField] private Button deleteButton = null;
+        [SerializeField] protected Button nextButton = null;
+        [SerializeField] protected Button previousButton = null;
+        [SerializeField] protected Button deleteButton = null;
 
-        private List<TrailRenderer> trailRenderers = null;
-        private int index = 0;
+        protected int index = 0;
 
         #endregion
 
@@ -33,9 +27,9 @@ namespace GestureRecognizer.Demo
 
         #region BEHAVIORS
 
-        private void Awake()
+        protected override void Awake()
         {
-            trailRenderers = new List<TrailRenderer>();
+            base.Awake();
             nextButton.onClick.AddListener(NextGesture);
             previousButton.onClick.AddListener(PreviousGesture);
             deleteButton.onClick.AddListener(DeleteGesture);
@@ -51,10 +45,7 @@ namespace GestureRecognizer.Demo
         {
             if (ShowErrorMessage())
                 return;
-
-            index++;
-            if (index >= Gestures.Count)
-                index = 0;
+            index = (index < Gestures.Count - 1) ? index + 1 : 0;
             ShowCurrentGesture();
         }
 
@@ -62,10 +53,7 @@ namespace GestureRecognizer.Demo
         {
             if (ShowErrorMessage())
                 return;
-
-            index--;
-            if (index < 0)
-                index = Gestures.Count - 1;
+            index = (index > 0) ? index - 1 : index = Gestures.Count - 1;
             ShowCurrentGesture();
         }
 
@@ -78,15 +66,6 @@ namespace GestureRecognizer.Demo
             if (index >= Gestures.Count)
                 index = 0;
             ShowCurrentGesture();
-        }
-
-        private void DeleteTrailRenderers()
-        {
-            foreach (TrailRenderer trailRenderer in trailRenderers)
-            {
-                Destroy(trailRenderer.gameObject);
-            }
-            trailRenderers.Clear();
         }
 
         private void ShowCurrentGesture()

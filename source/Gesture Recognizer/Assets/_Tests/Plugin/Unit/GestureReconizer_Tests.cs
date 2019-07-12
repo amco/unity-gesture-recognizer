@@ -12,6 +12,7 @@ namespace Tests.Plugin.Unit
         const string SquareName = "Square";
         const string LineName = "Line";
         const string ArrowName = "Arrow";
+
         private GesturesDataset gestureDataset;
 
         #endregion
@@ -20,7 +21,15 @@ namespace Tests.Plugin.Unit
 
         private Vector3[] SingleStrokeSquare
         {
-            get { return new Vector3[] { new Vector3(0, 0, 0), new Vector3(1, 0, 0), new Vector3(1, 1, 0), new Vector3(0, 1, 0), new Vector3(0, 0, 0) }; }
+            get
+            {
+                return new Vector3[]{
+                    new Vector3(0, 0, 0),
+                    new Vector3(1, 0, 0),
+                    new Vector3(1, 1, 0),
+                    new Vector3(0, 1, 0),
+                    new Vector3(0, 0, 0) };
+            }
         }
 
         private List<Vector3[]> MultiStrokeSquare
@@ -55,7 +64,15 @@ namespace Tests.Plugin.Unit
 
         private Vector3[] SingleStrokeArrow
         {
-            get { return new Vector3[] { new Vector3(0, 0, 0), new Vector3(0, 2, 0), new Vector3(-1, 1, 0), new Vector3(0, 2, 0), new Vector3(1, 1, 0) }; }
+            get
+            {
+                return new Vector3[] {
+                    new Vector3(0, 0, 0),
+                    new Vector3(0, 2, 0),
+                    new Vector3(-1, 1, 0),
+                    new Vector3(0, 2, 0),
+                    new Vector3(1, 1, 0) };
+            }
         }
 
         private List<Vector3[]> MultiStrokeArrow
@@ -80,7 +97,7 @@ namespace Tests.Plugin.Unit
         }
 
         [TearDown]
-        private void Reset()
+        public void Reset()
         {
             Object.Destroy(gestureDataset);
         }
