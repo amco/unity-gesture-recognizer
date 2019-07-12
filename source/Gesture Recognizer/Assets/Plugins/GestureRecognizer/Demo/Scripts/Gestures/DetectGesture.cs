@@ -54,19 +54,19 @@ namespace GestureRecognizer.Demo
                 trailRenderer.GetPositions(pointsToDetect);
                 strokes.Add(pointsToDetect);
             }
-            LogMessage(string.Format(GestureDetectedMessage, gestureDataset.Recognize(strokes)));
+            ShowStatusMessage(string.Format(GestureDetectedMessage, gestureDataset.Recognize(strokes)));
         }
 
         private bool IsReadyToDetect()
         {
             if (gestureDataset == null)
             {
-                LogMessage(NoDatasetFoundMessage);
+                ShowStatusMessage(NoDatasetFoundMessage);
                 return false;
             }
             if (gestureDataset.IsEmpty)
             {
-                LogMessage(NoGesturesFoundMessage);
+                ShowStatusMessage(NoGesturesFoundMessage);
                 return false;
             }
             return true;

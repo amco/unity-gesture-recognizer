@@ -85,19 +85,19 @@ namespace GestureRecognizer.Demo
                 trailRenderer.AddPositions(points);
                 trailRenderer.transform.position = points[points.Length - 1];
             }
-            LogMessage(string.Format(GestureShownMessage, CurrentGesture.name));
+            ShowStatusMessage(string.Format(GestureShownMessage, CurrentGesture.name));
         }
 
         private bool IsReadyToView()
         {
             if (gestureDataset == null)
             {
-                LogMessage(NoDatasetFoundMessage);
+                ShowStatusMessage(NoDatasetFoundMessage);
                 return false;
             }
             if (gestureDataset.IsEmpty)
             {
-                LogMessage(NoGesturesFoundMessage);
+                ShowStatusMessage(NoGesturesFoundMessage);
                 return false;
             }
             return true;

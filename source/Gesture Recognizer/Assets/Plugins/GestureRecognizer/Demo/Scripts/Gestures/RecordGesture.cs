@@ -21,6 +21,7 @@ namespace GestureRecognizer.Demo
 
         protected override void Awake()
         {
+            base.Awake();
             submitButton.onClick.AddListener(Submit);
             clearButton.onClick.AddListener(DeleteTrailRenderers);
         }
@@ -44,7 +45,7 @@ namespace GestureRecognizer.Demo
                 strokes.Add(pointsToDetect);
             }
             gestureDataset.AddGesture(strokes, gestureNameField.text);
-            LogMessage(string.Format(GestureSavedMessage, gestureNameField.text));
+            ShowStatusMessage(string.Format(GestureSavedMessage, gestureNameField.text));
             gestureNameField.text = string.Empty;
         }
 
@@ -52,12 +53,12 @@ namespace GestureRecognizer.Demo
         {
             if (gestureDataset == null)
             {
-                LogMessage(NoDatasetFoundMessage);
+                ShowStatusMessage(NoDatasetFoundMessage);
                 return false;
             }
             if (gestureNameField.text == string.Empty)
             {
-                LogMessage(NoNameMessage);
+                ShowStatusMessage(NoNameMessage);
                 return false;
             }
             return true;

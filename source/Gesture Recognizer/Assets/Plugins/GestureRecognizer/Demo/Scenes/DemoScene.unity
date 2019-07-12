@@ -2242,7 +2242,7 @@ GameObject:
   - component: {fileID: 1191421374}
   - component: {fileID: 1191421373}
   m_Layer: 5
-  m_Name: LogText
+  m_Name: StatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2487,7 +2487,7 @@ MonoBehaviour:
   gestureDataset: {fileID: 11400000, guid: 6b368c996403ab347a17655772094f2f, type: 2}
   trailRendererPrefab: {fileID: 6613043542811157315, guid: 6ce80167de12f134abbc947a5adce1d4,
     type: 3}
-  logText: {fileID: 2119304485}
+  statusText: {fileID: 2119304485}
   nextButton: {fileID: 647139096}
   previousButton: {fileID: 1198710037}
   deleteButton: {fileID: 1170742587}
@@ -2915,7 +2915,7 @@ MonoBehaviour:
   gestureDataset: {fileID: 11400000, guid: 6b368c996403ab347a17655772094f2f, type: 2}
   trailRendererPrefab: {fileID: 6613043542811157315, guid: 6ce80167de12f134abbc947a5adce1d4,
     type: 3}
-  logText: {fileID: 1191421373}
+  statusText: {fileID: 1191421373}
   gestureNameField: {fileID: 1596286440}
   submitButton: {fileID: 292386277}
   clearButton: {fileID: 1139105558}
@@ -3154,7 +3154,7 @@ GameObject:
   - component: {fileID: 1638986425}
   - component: {fileID: 1638986424}
   m_Layer: 5
-  m_Name: LogText
+  m_Name: StatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3432,7 +3432,7 @@ MonoBehaviour:
   gestureDataset: {fileID: 11400000, guid: 6b368c996403ab347a17655772094f2f, type: 2}
   trailRendererPrefab: {fileID: 6613043542811157315, guid: 6ce80167de12f134abbc947a5adce1d4,
     type: 3}
-  logText: {fileID: 1638986424}
+  statusText: {fileID: 1638986424}
   submitButton: {fileID: 299440117}
   clearButton: {fileID: 1276740606}
 --- !u!224 &1942069312
@@ -3708,7 +3708,7 @@ GameObject:
   - component: {fileID: 2119304486}
   - component: {fileID: 2119304485}
   m_Layer: 5
-  m_Name: LogText
+  m_Name: StatusText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -13,7 +13,7 @@ namespace GestureRecognizer.Demo
 
         [SerializeField] protected GesturesDataset gestureDataset = null;
         [SerializeField] protected TrailRenderer trailRendererPrefab = null;
-        [SerializeField] protected Text logText = null;
+        [SerializeField] protected Text statusText = null;
 
         protected List<TrailRenderer> trailRenderers = null;
 
@@ -53,9 +53,9 @@ namespace GestureRecognizer.Demo
             trailRenderers[trailRenderers.Count - 1].transform.position = newPos;
         }
 
-        protected void LogMessage(string errorMessage)
+        protected void ShowStatusMessage(string errorMessage)
         {
-            logText.text = errorMessage;
+            statusText.text = errorMessage;
         }
 
         #endregion
