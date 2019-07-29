@@ -28,3 +28,8 @@ Just import the UnityPackage of the lastest version found on **builds** folder
      - Get the positions using the **GetPositions** function on the TrailRenderer
 - You can save backups of the gesture dataset using presets
 - See DemoScene for usage example
+# Change log
+- 1.0.1
+	- More performance, now it only recalculates the patterns when a change ocurred
+- 1.0.0
+	- First working version

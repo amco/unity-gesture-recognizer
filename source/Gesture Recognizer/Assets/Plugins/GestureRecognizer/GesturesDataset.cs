@@ -41,11 +41,16 @@ namespace GestureRecognizer
 
         #region BEHAVIORS
 
+        public void OnEnable()
+        {
+            shouldRecalculate = true;
+        }
+
         public PDollar.Gesture[] PDollarGestures()
         {
             if (!shouldRecalculate)
                 return pDollarGestures;
-
+            shouldRecalculate = false;
             pDollarGestures = new PDollar.Gesture[gestures.Count];
             for (int i = 0; i < gestures.Count; i++)
             {
