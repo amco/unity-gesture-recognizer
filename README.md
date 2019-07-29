@@ -30,6 +30,6 @@ Just import the UnityPackage of the lastest version found on **builds** folder
 - See DemoScene for usage example
 # Change log
 - 1.0.1
-	- More performance, now it only recalculates the patterns when a change ocurred
+	- Recalculation of patterns only when needed
 - 1.0.0
 	- First working version
