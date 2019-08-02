@@ -8,13 +8,13 @@ namespace GestureRecognizer.Demo
     {
         #region FIELDS
 
-        protected const string GestureShownMessage = "{0} shown!";
+        private const string GestureShownMessage = "{0} shown!";
 
-        [SerializeField] protected Button nextButton = null;
-        [SerializeField] protected Button previousButton = null;
-        [SerializeField] protected Button deleteButton = null;
+        [SerializeField] private Button nextButton = null;
+        [SerializeField] private Button previousButton = null;
+        [SerializeField] private Button deleteButton = null;
 
-        protected int index = 0;
+        private int index = 0;
 
         #endregion
 
@@ -90,14 +90,9 @@ namespace GestureRecognizer.Demo
 
         private bool IsReadyToView()
         {
-            if (gestureDataset == null)
+            if (gestureDataset == null || gestureDataset.IsEmpty)
             {
                 ShowStatusMessage(NoDatasetFoundMessage);
-                return false;
-            }
-            if (gestureDataset.IsEmpty)
-            {
-                ShowStatusMessage(NoGesturesFoundMessage);
                 return false;
             }
             return true;

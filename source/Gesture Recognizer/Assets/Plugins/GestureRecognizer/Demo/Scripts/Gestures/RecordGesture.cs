@@ -8,12 +8,12 @@ namespace GestureRecognizer.Demo
     {
         #region FIELDS
 
-        protected const string NoNameMessage = "No name inserted";
-        protected const string GestureSavedMessage = "{0}  saved!";
+        private const string NoNameMessage = "No name inserted";
+        private const string GestureSavedMessage = "{0}  saved!";
 
-        [SerializeField] protected InputField gestureNameField = null;
-        [SerializeField] protected Button submitButton = null;
-        [SerializeField] protected Button clearButton = null;
+        [SerializeField] private InputField gestureNameField = null;
+        [SerializeField] private Button submitButton = null;
+        [SerializeField] private Button clearButton = null;
 
         #endregion
 

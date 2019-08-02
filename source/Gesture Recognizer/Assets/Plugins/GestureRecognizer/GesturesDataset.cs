@@ -53,9 +53,7 @@ namespace GestureRecognizer
             shouldRecalculate = false;
             pDollarGestures = new PDollar.Gesture[gestures.Count];
             for (int i = 0; i < gestures.Count; i++)
-            {
                 pDollarGestures[i] = gestures[i].ToPDollarGesture();
-            }
             return pDollarGestures;
         }
 
@@ -109,9 +107,7 @@ namespace GestureRecognizer
             List<SerializablePoint> pDollarPoints = new List<SerializablePoint>();
             int strokeIndex = 0;
             foreach (Vector3[] vector3Stroke in vector3Points)
-            {
                 pDollarPoints.AddRange(Vectors3ToPoints(vector3Stroke, strokeIndex++));
-            }
             return pDollarPoints.ToArray();
         }
 
@@ -119,9 +115,7 @@ namespace GestureRecognizer
         {
             SerializablePoint[] pDollarPoints = new SerializablePoint[vector3Points.Length];
             for (int i = 0; i < vector3Points.Length; i++)
-            {
                 pDollarPoints[i] = Vector3ToPoint(vector3Points[i], strokeId);
-            }
             return pDollarPoints;
         }
 
