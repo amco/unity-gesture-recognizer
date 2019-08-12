@@ -33,7 +33,7 @@ namespace GestureRecognizer
             return new PDollar.Gesture(points, name);
         }
 
-        public List<Vector3[]> GetPointsVector3Lists()
+        public List<Vector3[]> GetVector3PointsList()
         {
             List<Vector3[]> listOfPoints = new List<Vector3[]>();
             List<Vector3> pointsInStroke = new List<Vector3>();

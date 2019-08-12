@@ -77,7 +77,7 @@ namespace GestureRecognizer.Demo
             if (!IsReadyToView())
                 return;
 
-            List<Vector3[]> listOfPoints = CurrentGesture.GetPointsVector3Lists();
+            List<Vector3[]> listOfPoints = CurrentGesture.GetVector3PointsList();
             foreach (Vector3[] points in listOfPoints)
             {
                 TrailRenderer trailRenderer = Instantiate<TrailRenderer>(trailRendererPrefab, Vector3.zero, Quaternion.identity, transform);
