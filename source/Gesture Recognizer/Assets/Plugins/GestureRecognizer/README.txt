@@ -1,4 +1,4 @@
-Unity Gesture Recognizer v1.0.1
+Unity Gesture Recognizer v1.0.2
 ------------------------------
 
 This is a Unity implementation of $Q Super-Quick Recognizer
