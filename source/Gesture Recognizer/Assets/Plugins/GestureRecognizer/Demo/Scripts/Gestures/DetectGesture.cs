@@ -8,12 +8,12 @@ namespace GestureRecognizer.Demo
     {
         #region FIELDS
 
-        protected const string GestureDetectedMessage = "{0}  recognized!";
+        private const string GestureDetectedMessage = "{0}  recognized!";
 
-        [SerializeField] protected Button submitButton = null;
-        [SerializeField] protected Button clearButton = null;
+        [SerializeField] private Button submitButton = null;
+        [SerializeField] private Button clearButton = null;
 
-        protected bool clearOnNextDraw = false;
+        private bool clearOnNextDraw = false;
 
         #endregion
 

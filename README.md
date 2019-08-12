@@ -1,4 +1,4 @@
-# Unity Gesture Recognizer v1.0
+# Unity Gesture Recognizer v1.0.2
 This is a Unity implementation of [$Q Super-Quick Recognizer](http://depts.washington.edu/ilab/proj/dollar/qdollar.html)
 # Installation
 Just import the UnityPackage of the lastest version found on **builds** folder
@@ -29,6 +29,8 @@ Just import the UnityPackage of the lastest version found on **builds** folder
 - You can save backups of the gesture dataset using presets
 - See DemoScene for usage example
 # Change log
+- 1.0.2
+	- Code cleaning and recalculation of patterns at start instead of doing it on the first stroke
 - 1.0.1
 	- Recalculation of patterns only when needed
 - 1.0.0

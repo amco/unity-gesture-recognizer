@@ -114,7 +114,7 @@ namespace Tests.Plugin.Unit
             Assert.That(gestureDataset.Gestures.Count == 1);
             Assert.That(gestureDataset.GetGesture(SquareName) != null);
             listOfVector3Array.Add(SingleStrokeSquare);
-            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetPointsVector3Lists(), listOfVector3Array));
+            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetVector3PointsList(), listOfVector3Array));
         }
 
         [Test]
@@ -126,7 +126,7 @@ namespace Tests.Plugin.Unit
 
             Assert.That(gestureDataset.Gestures.Count == 1);
             Assert.That(gestureDataset.GetGesture(SquareName) != null);
-            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetPointsVector3Lists(), MultiStrokeSquare));
+            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetVector3PointsList(), MultiStrokeSquare));
         }
 
         [Test]
@@ -139,7 +139,7 @@ namespace Tests.Plugin.Unit
             gestureDataset.AddGesture(MultiStrokeArrow, ArrowName);
 
             Assert.That(gestureDataset.GetGesture(SquareName).name == SquareName);
-            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetPointsVector3Lists(), MultiStrokeSquare));
+            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetVector3PointsList(), MultiStrokeSquare));
         }
 
         [Test]
@@ -181,13 +181,13 @@ namespace Tests.Plugin.Unit
 
             Assert.That(gestureDataset.Gestures.Count == 1);
             singleStrokeSquareList.Add(SingleStrokeSquare);
-            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetPointsVector3Lists(), singleStrokeSquareList));
+            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetVector3PointsList(), singleStrokeSquareList));
 
             gestureDataset.AddGesture(MultiStrokeSquare, SquareName);
 
             Assert.That(gestureDataset.Gestures.Count == 1);
-            Assert.That(!IsListEquals(gestureDataset.GetGesture(SquareName).GetPointsVector3Lists(), singleStrokeSquareList));
-            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetPointsVector3Lists(), MultiStrokeSquare));
+            Assert.That(!IsListEquals(gestureDataset.GetGesture(SquareName).GetVector3PointsList(), singleStrokeSquareList));
+            Assert.That(IsListEquals(gestureDataset.GetGesture(SquareName).GetVector3PointsList(), MultiStrokeSquare));
         }
 
         [Test]

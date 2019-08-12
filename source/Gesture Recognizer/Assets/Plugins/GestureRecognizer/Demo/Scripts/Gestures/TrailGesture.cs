@@ -48,9 +48,9 @@ namespace GestureRecognizer.Demo
 
         protected void MoveTrailToCursor()
         {
-            Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            newPos.z = 0;
-            trailRenderers[trailRenderers.Count - 1].transform.position = newPos;
+            Vector3 newPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            newPosition.z = 0;
+            trailRenderers[trailRenderers.Count - 1].transform.position = newPosition;
         }
 
         protected void ShowStatusMessage(string errorMessage)
