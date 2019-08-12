@@ -30,7 +30,7 @@ Just import the UnityPackage of the lastest version found on **builds** folder
 - See DemoScene for usage example
 # Change log
 - 1.0.2
-	- Code cleaning
+	- Code cleaning and recalculation of patterns at start instead of doing it on the first stroke
 - 1.0.1
 	- Recalculation of patterns only when needed
 - 1.0.0
