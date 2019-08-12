@@ -90,9 +90,14 @@ namespace GestureRecognizer.Demo
 
         private bool IsReadyToView()
         {
-            if (gestureDataset == null || gestureDataset.IsEmpty)
+            if (gestureDataset == null)
             {
                 ShowStatusMessage(NoDatasetFoundMessage);
+                return false;
+            }
+            if (gestureDataset.IsEmpty)
+            {
+                ShowStatusMessage(NoGesturesFoundMessage);
                 return false;
             }
             return true;
